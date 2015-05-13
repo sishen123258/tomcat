@@ -42,7 +42,7 @@ public class HttpConnector implements Runnable{
                 continue;
             }
             HttpProcessor processor=new HttpProcessor(this);
-            processor.process();
+            processor.process(socket);
 
         }
 
