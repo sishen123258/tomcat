@@ -7,7 +7,8 @@ import com.tong.connector.http.HttpResponse;
  * Created by Tong on 2015/5/13.
  */
 public class StaticResourceProcessor {
-    public void process(HttpRequest request, HttpResponse response) {
 
+    public void process(HttpRequest request, HttpResponse response) {
+        response.sendStaticResources();
     }
 }

@@ -3,23 +3,21 @@ package com.tong.connector.http;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Collection;
 import java.util.Locale;
 
 /**
  * Created by Tong on 2015/5/13.
  */
-public class HttpResponse implements HttpServletResponse{
+public class HttpResponse implements HttpServletResponse {
 
 
     private OutputStream outputStream;
     private HttpRequest request;
 
     public HttpResponse(OutputStream outputStream) {
-        this.outputStream=outputStream;
+        this.outputStream = outputStream;
     }
 
     @Override
@@ -208,5 +206,22 @@ public class HttpResponse implements HttpServletResponse{
 
     public HttpRequest getRequest() {
         return request;
+    }
+
+    public void sendStaticResources() {
+
+        byte[] bytes = new byte[1024];
+        FileInputStream fis = null;
+
+        try {
+            File file = new File(Constants.WEB_ROOT, request.getRequestURI());
+            fis = new FileInputStream(file);
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }

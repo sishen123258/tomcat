@@ -2,7 +2,6 @@ package com.tong.connector.http;
 
 import com.tong.ServletProcessor;
 import com.tong.StaticResourceProcessor;
-import com.tong.connector.http.HttpConnector;
 import org.apache.catalina.util.RequestUtil;
 import org.apache.catalina.util.StringManager;
 
@@ -216,7 +215,7 @@ public class HttpProcessor {
 
     }
 
-    private void parseHeaders(SocketInputStream inputStream) throws IOException {
+    private void parseHeaders(SocketInputStream inputStream) throws IOException, ServletException {
         while (true) {
             HttpHeader header = new HttpHeader();;
 
