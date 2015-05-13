@@ -2,8 +2,9 @@ package com.tong.connector.http;
 
 import com.tong.ServletProcessor;
 import com.tong.StaticResourceProcessor;
-import com.tong.connector.HttpConnector;
+import com.tong.connector.http.HttpConnector;
 import org.apache.catalina.util.RequestUtil;
+import org.apache.catalina.util.StringManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -23,6 +24,9 @@ public class HttpProcessor {
 
     protected String method = null;
     protected String queryString = null;
+
+    protected StringManager sm =
+            StringManager.getManager("com.tong.connector.http");
 
     public HttpProcessor(HttpConnector connector) {
         this.connector=connector;

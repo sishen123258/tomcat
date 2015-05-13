@@ -1,6 +1,6 @@
 package com.tong.startup;
 
-import com.tong.connector.HttpConnector;
+import com.tong.connector.http.HttpConnector;
 
 /**
  * Created by Tong on 2015/5/13.

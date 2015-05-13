@@ -1,4 +1,4 @@
-package com.tong.connector;
+package com.tong.connector.http;
 
 import com.tong.connector.http.HttpProcessor;
 
