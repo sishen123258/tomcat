@@ -4,7 +4,10 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.InetAddress;
+import java.net.Socket;
 import java.security.Principal;
 import java.util.Collection;
 import java.util.Enumeration;
@@ -14,11 +17,109 @@ import java.util.Map;
 /**
  * Created by Tong on 2015/5/13.
  */
+
 public class HttpRequest implements HttpServletRequest {
 
+
+    private String contentType;
+    private int contentLength;
+    private InetAddress inetAddress;
+    private InputStream input;
+    private String method;
+    private String protocol;
+    private String queryString;
+    private String requestURI;
+    private String serverName;
+    private int serverPort;
+    private Socket socket;
+    private boolean requestedSessionCookie;
+    private String requestedSessionId;
+    private boolean requestedSessionURL;
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
+
+    public void setContentLength(int contentLength) {
+        this.contentLength = contentLength;
+    }
+
+    public void setInetAddress(InetAddress inetAddress) {
+        this.inetAddress = inetAddress;
+    }
+
+    public void setInput(InputStream input) {
+        this.input = input;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
+    public void setProtocol(String protocol) {
+        this.protocol = protocol;
+    }
+
+    public void setQueryString(String queryString) {
+        this.queryString = queryString;
+    }
+
+    public void setRequestURI(String requestURI) {
+        this.requestURI = requestURI;
+    }
+
+    public void setServerName(String serverName) {
+        this.serverName = serverName;
+    }
+
+    public void setServerPort(int serverPort) {
+        this.serverPort = serverPort;
+    }
+
+    public void setSocket(Socket socket) {
+        this.socket = socket;
+    }
+
+    public void setRequestedSessionCookie(boolean requestedSessionCookie) {
+        this.requestedSessionCookie = requestedSessionCookie;
+    }
+
+    public void setRequestedSessionId(String requestedSessionId) {
+        this.requestedSessionId = requestedSessionId;
+    }
+
+    public void setRequestedSessionURL(boolean requestedSessionURL) {
+        this.requestedSessionURL = requestedSessionURL;
+    }
+
+    public void setInputStream(SocketInputStream inputStream) {
+        this.inputStream = inputStream;
+    }
+
+    public InetAddress getInetAddress() {
+        return inetAddress;
+    }
+
+    public InputStream getInput() {
+        return input;
+    }
+
+    public Socket getSocket() {
+        return socket;
+    }
+
+    public boolean isRequestedSessionCookie() {
+        return requestedSessionCookie;
+    }
+
+    public boolean isRequestedSessionURL() {
+        return requestedSessionURL;
+    }
+
     private SocketInputStream inputStream;
+
     public HttpRequest(SocketInputStream inputStream) {
-        this.inputStream=inputStream;
+        this.inputStream = inputStream;
     }
 
     @Override
