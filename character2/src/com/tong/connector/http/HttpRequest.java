@@ -16,6 +16,11 @@ import java.util.Map;
  */
 public class HttpRequest implements HttpServletRequest {
 
+    private SocketInputStream inputStream;
+    public HttpRequest(SocketInputStream inputStream) {
+        this.inputStream=inputStream;
+    }
+
     @Override
     public String getAuthType() {
         return null;

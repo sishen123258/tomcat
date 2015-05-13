@@ -4,6 +4,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.Collection;
 import java.util.Locale;
@@ -13,6 +14,13 @@ import java.util.Locale;
  */
 public class HttpResponse implements HttpServletResponse{
 
+
+    private OutputStream outputStream;
+    private HttpRequest request;
+
+    public HttpResponse(OutputStream outputStream) {
+        this.outputStream=outputStream;
+    }
 
     @Override
     public void addCookie(Cookie cookie) {
@@ -192,5 +200,13 @@ public class HttpResponse implements HttpServletResponse{
     @Override
     public Locale getLocale() {
         return null;
+    }
+
+    public void setRequest(HttpRequest request) {
+        this.request = request;
+    }
+
+    public HttpRequest getRequest() {
+        return request;
     }
 }
