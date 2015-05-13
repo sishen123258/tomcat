@@ -1,6 +1,7 @@
 package com.tong.connector;
 
-import ex03.pyrmont.connector.http.HttpResponse;
+
+import com.tong.connector.http.HttpResponse;
 
 import javax.servlet.ServletOutputStream;
 import java.io.IOException;
