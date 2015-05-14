@@ -1,7 +1,5 @@
 package com.tong.connector.http;
 
-import com.tong.connector.http.HttpProcessor;
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
@@ -23,7 +21,7 @@ public class HttpConnector implements Runnable{
     public void run() {
 
         ServerSocket serverSocket=null;
-        int port=8080;
+        int port=8888;
 
         try {
             serverSocket=new ServerSocket(port,1, InetAddress.getByName("127.0.0.1"));

@@ -19,7 +19,7 @@ public class HttpProcessor {
     private HttpConnector connector;
     private HttpRequest request;
     private HttpResponse response;
-    private HttpRequestLine requestLine;
+    private HttpRequestLine requestLine=new HttpRequestLine();
 
     protected String method = null;
     protected String queryString = null;
