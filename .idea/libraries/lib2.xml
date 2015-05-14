@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/commons-daemon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/naming-resources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/commons-digester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/mx4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/naming-factory.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/tomcat-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/jcert.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/jnet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/jakarta-regexp-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/jaas.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/naming-common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/jsse.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/commons-collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/commons-modeler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/lib/xmlParserAPIs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

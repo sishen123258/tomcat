@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="深入剖析Tomcat源码1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/commons-modeler-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../深入剖析Tomcat/深入剖析Tomcat源码/commons-digester-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
