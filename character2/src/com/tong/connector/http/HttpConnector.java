@@ -27,7 +27,7 @@ public class HttpConnector implements Runnable{
             serverSocket=new ServerSocket(port,1, InetAddress.getByName("127.0.0.1"));
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.printf(e.toString());
             System.exit(1);
         }
 
@@ -36,7 +36,7 @@ public class HttpConnector implements Runnable{
             try {
                 socket =serverSocket.accept();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.printf(e.toString());
                 continue;
             }
             HttpProcessor processor=new HttpProcessor(this);
