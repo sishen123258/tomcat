@@ -15,7 +15,9 @@
           <root url="jar://$MODULE_DIR$/../lib/catalina-4.0.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../catalina.zip!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>

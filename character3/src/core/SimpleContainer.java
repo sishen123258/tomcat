@@ -5,12 +5,20 @@ import org.apache.catalina.*;
 import javax.naming.directory.DirContext;
 import javax.servlet.ServletException;
 import java.beans.PropertyChangeListener;
+import java.io.File;
 import java.io.IOException;
 
 /**
  * Created by Tong on 2015/5/17.
  */
 public  class SimpleContainer implements Container{
+
+    public static final String WEB_ROOT =
+            System.getProperty("user.dir") + File.separator  + "webroot";
+
+    public SimpleContainer() {
+    }
+
     @Override
     public void addChild(Container container) {
 
